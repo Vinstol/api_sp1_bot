@@ -11,9 +11,9 @@ from telegram import Bot
 
 load_dotenv()
 
-PRAKTIKUM_TOKEN = os.environ("PRAKTIKUM_TOKEN")
-TELEGRAM_TOKEN = os.environ('TELEGRAM_TOKEN')
-CHAT_ID = os.environ('TELEGRAM_CHAT_ID')
+PRAKTIKUM_TOKEN = os.environ.get("PRAKTIKUM_TOKEN")
+TELEGRAM_TOKEN = os.environ.get('TELEGRAM_TOKEN')
+CHAT_ID = os.environ.get('TELEGRAM_CHAT_ID')
 URL = 'https://praktikum.yandex.ru/api/user_api/homework_statuses/'
 
 logging.basicConfig(
