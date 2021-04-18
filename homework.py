@@ -41,9 +41,8 @@ def parse_homework_status(homework):
         elif hw_status == 'rejected':
             verdict = 'К сожалению в работе нашлись ошибки.'
         else:
-            verdict = (
-                'Ревьюеру всё понравилось, можно приступать к следующему уроку.'
-            )
+            verdict = ('Ревьюеру всё понравилось, можно приступать к '
+                       'следующему уроку.')
         return f'У вас проверили работу "{hw_name}"!\n\n{verdict}'
 
 
